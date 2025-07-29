@@ -1,4 +1,4 @@
-Wtype     ROC HalfROC     Seq  ROCpin  SiCell  TrLink  TrCell      iu      iv   trace       t
+Typecode ROC HalfROC Seq ROCpin SiCell TrLink TrCell iu iv trace t
 ML-F       0       0       0       0      36       0       0       3       7   41.62       1
 ML-F       0       0       1       1      26       0       0       2       7   59.36       1
 ML-F       0       0       2       2      35       0       0       3       6   38.64       1
