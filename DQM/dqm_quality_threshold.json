@@ -1,0 +1,93 @@
+{
+  "econd": {
+    "version": "1.0",
+    "description": "Customized error thresholds for HGCal DQM quality checks",
+    "default_thresholds": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "error_thresholds_matrix": [
+      [100, 200, 300, 400, 500],
+      [2, 5, 10, 20, 30],
+      [3, 8, 15, 25, 40],
+      [100, 200, 300, 400, 500],
+      [2, 5, 10, 20, 30],
+      [3, 8, 15, 25, 40],
+      [1, 3, 8, 15, 25],
+      [1, 3, 8, 15, 25],
+      [1, 2, 5, 10, 20],
+      [1, 2, 5, 10, 20],
+      [5, 12, 25, 40, 60],
+      [1, 3, 8, 15, 25],
+      [1, 3, 8, 15, 25],
+      [2, 5, 12, 20, 35],
+      [5, 12, 25, 40, 60],
+      [1, 2, 5, 10, 20],
+      [1, 3, 8, 15, 25],
+      [1, 2, 5, 10, 20],
+      [1, 3, 8, 15, 25],
+      [1, 2, 5, 10, 20],
+      [2, 5, 12, 20, 35],
+      [1, 2, 5, 10, 20]
+    ],
+    "error_type_labels": [
+      "H/T good",
+      "H/T fail",
+      "H/T amb",
+      "E/B/O good",
+      "E/B/O fail",
+      "E/B/O amb",
+      "Unmatched (M)",
+      "Trunc (T)",
+      "Unexpected (E)",
+      "Sub-packet error (S)",
+      "Marker",
+      "Payload (OF)",
+      "Payload (mismatch)",
+      "CB: !Normal",
+      "Payload",
+      "CRC Error",
+      "EvID Mis.",
+      "FSM T/O",
+      "BCID/OrbitID",
+      "MB Overflow",
+      "Inactive",
+      "CRC trailer error"
+    ],
+    "channel_noise_threshold": 50,
+    "stdadc_overflow_threshold": 4.0,
+    "saturated_adc_threshold": 1010,
+    "notes": {
+      "grading_system": "Grade 1 (best) to Grade 5 (worst) based on error count thresholds",
+      "customization": "Adjust thresholds based on specific detector requirements and experience"
+    }
+  },
+  "econt": {
+    "version": "1.0",
+    "description": "Error thresholds for HGCal ECON-T DQM quality checks",
+    "default_thresholds": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "error_thresholds_matrix": [
+      [1, 3, 5, 10, 20],
+      [1, 2, 5, 10, 15],
+      [1, 3, 8, 15, 25]
+    ],
+    "error_type_labels": [
+      "nTC not matching (BC)",
+      "Subpacket Error (S)",
+      "TDaqIdx Out Range"
+    ],
+    "notes": {
+      "grading_system": "Grade 1 (best) to Grade 5 (worst) based on error count thresholds",
+      "customization": "Adjust thresholds based on specific detector requirements and experience"
+    }
+  }
+}
